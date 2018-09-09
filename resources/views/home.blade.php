@@ -25,7 +25,7 @@
                       {{$bookmark->name}} <span class="label label-default">{{$bookmark->description}}</span>
                       </a>
                       <span class="float-right btn-group">
-                        <button type="button" class="btn btn-danger" name="button">
+                        <button data-id="{{$bookmark->id}}" type="button" class="delete-bookmark btn btn-danger" name="button">
                         <span class="glyphicon glyphicon-remove"></span>Delete
                         </button> 
                       </span>

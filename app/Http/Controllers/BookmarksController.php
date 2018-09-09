@@ -34,4 +34,12 @@ class BookmarksController extends Controller
 
     }
 
+    //delete Bookmark
+    public function destroy($id) {
+        $bookmark = Bookmark::find($id);
+        $bookmark->delete();
+
+        return;
+    }
+
 }
